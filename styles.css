@@ -1,0 +1,172 @@
+
+body{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 250px calc(100% - 250px);
+    grid-template-rows: 150px calc(101vh - 150px);
+}
+.header{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-family: 'Inter', sans-serif;
+    background-color: #ffffff;
+    gap: 10px;
+    grid-column: 2;
+    grid-row: 1;
+    padding-right: 50px;
+    padding: 10px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.headTop{
+    display: flex;
+    margin-top: 15px;
+}
+.headBot{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.searchBar input{
+    border-radius: 50px;
+    border: 1px solid #E2E6F1;
+    background: #E2E6F1;
+    height: 30px;
+    width: 80%;
+}
+.searchBar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 3;
+}
+.headRight{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    font-weight: 700;
+    font-size: 20px;
+}
+.hiThere{
+    display: flex;
+    margin-left: 60px;
+    gap: 15px;
+
+}
+.hiThere div{
+    margin-top: 10px;
+}
+.hiThere h2{
+    font-weight: 700;
+    font-size: 20px;
+}
+.hiThere h4{
+    font-weight: 600;
+    font-size: 16px;
+}
+.headButtons{
+    display: flex;
+    gap: 25px;
+    margin-top: 5px;
+}
+.headButtons button{
+    font-weight: 600;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #2F7CD8;
+    border-radius: 50px;
+    border: 2px solid #2F7CD8;
+    padding: 10px 25px;
+}
+.headButtons button:active{
+    color:#2F7CD8;
+    background-color: #ffffff;
+}
+.dashLogo{
+    display: flex;
+    align-items: center;
+    font-size: 28px;
+}
+.sidebar{
+    font-family: 'Inter', sans-serif;
+    background-color: #2F7CD8;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 16px;
+    height: 100vh;
+    grid-column: 1;
+    grid-row: 1;
+    padding: 20px;
+
+}
+.sidebar .flexColumn{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 40px;
+}
+.sidebar ul li{
+    display: flex;
+    align-items: center;
+    margin: 20px 10px;
+    gap: 15px;
+}
+.content{
+    font-family: 'Inter', sans-serif;
+    background-color: #E2E6F1;
+    grid-column: 2;
+    grid-row: 2;
+    display: grid;
+    grid-template-columns: 2fr 0.5fr;
+    padding: 30px;
+    gap: 30px;
+}
+.card{
+    width: 225px;
+    height: 115px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+.card h2{
+    font-weight: 600;
+    font-size: 14px;
+}
+.card p{
+    font-size: 12px;
+
+}
+.cards{
+    display: grid ;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-template-rows: repeat(3, 150px);
+    gap: 15px;
+}
+.announce{
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    width: 200px;
+    height: 250px; 
+}
+.announce-flex{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-weight: 600;
+    font-size: 20px;
+}
+.cards-flex{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-weight: 600;
+    font-size: 20px;
+}
